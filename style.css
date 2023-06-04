@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Fieldwork';
+    src: url(fonts/Fieldwork-Geo-Fat-Demo.otf);
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.header {
+    background-color: #FFBF69;
+    background-image: url(images/background.png);
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+nav {
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Fieldwork;
+    letter-spacing: .1rem;
+    color: #f1f1f1;
+    font-size: 70%;
+    color: black;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+.item{
+    padding: 10px;
+}
+
+.item.button {
+    padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+
+.float_right {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7.5px 10px 7.5px 0;
+    float: right;
+}
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.header__container {
+    margin: auto;
+    margin-right: 50%;
+    width: 20%;
+}
+
+.header__title {
+    font-family: Fieldwork;
+    letter-spacing: .2rem;
+    color: #f1f1f1;
+    font-size: 400%;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+
+.header__paragraph {
+    font-family: Fieldwork;
+    font-weight: lighter;
+    letter-spacing: .1rem;
+    color: #f1f1f1;
+    margin-top: 2%;
+}
+
+.header__button {
+    font-size: 160%;
+    background-color: #CBF3F0;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    width: 48%;
+    height: 40px;
+    margin: 0;
+    margin-top: 15%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    background-color: #bbdad8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    border-radius: 20px;
+    transition: border-radius 0.3s;
+}
+
+.content {
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    height: 300px;
+}
+
+.content__container{
+    padding: 30px;
+    text-align: center;
+    height: fit-content;
+    padding: 40px;
+}
+
+.content__container h2{
+    font-family: Fieldwork;
+    font-weight: lighter;
+    letter-spacing: .1rem;
+    color: black;
+    
+}
+.content__container p{
+    margin: auto;
+    color: black;
+    width: 690px;
+}
+
+
+.content__container1{
+    display: grid;
+    grid-template-areas:
+            'heading heading heading'
+            'info info info';
+    padding: 30px;
+    text-align: center;
+    height:fit-content;
+    padding: 40px;
+    background-color: #CBF3F0;
+}
+.content__container1 h1{
+    grid-area: heading;
+    justify-self: center;
+    font-family: Fieldwork;
+    font-weight: lighter;
+    letter-spacing: .1rem;
+    color: black;
+}
+.content__container1 p{
+    grid-area: heading;
+    justify-self: center;
+    font-size: smaller;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+}
+.content_container1 > div{
+    grid-area: info;
+    justify-self:center;
+    margin: auto;
+    padding:50px;
+}
+.content__container1__item__image, .content__container1__item__image1, .content__container1__item__image2{
+    margin: 5px;
+    width: 130px;
+}
+
+.content__button {
+    font-size: 160%;
+    background-color: #FFBF69;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    width: 35%;
+    height: 33px;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content__button:hover {
+    background-color: #d69e55;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    border-radius: 20px;
+    transition: border-radius 0.3s;
+}
+
+
+.content__container2 {
+    display: flex;
+    background-image: url(images/bg-grid.png);
+    width: 100%;
+    height: fit-content;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.content__container2 > div{
+    flex: 50%;
+    margin: 0;
+    padding:50px;
+}
+
+.content__container2__item>*{
+    text-align: center;
+}
+
+.content__container2__item__image{
+    width: 450px;
+}
+
+.footer{
+    display: flex;
+    background-color: #333333;
+    height: fit-content;
+
+}
+
+.footer >*{
+    font-size: small;
+    margin: auto;
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1092px) {
+    .header__container {
+        margin: auto;
+        width: 50%;
+    }
+    .content__container p{
+        width: 300px;
+    }
+    .content__container2__item__image{
+        width: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .header__container {
+        margin: auto;
+        width: 50%;
+    }
+    .header__container > .header__button{
+        margin: auto;
+    }
+    a {
+        font-size: 55%;
+    }
+    .logo {
+        margin: auto;
+
+    }
+    .float_right {
+        margin: auto;
+    }
+    .content__container2__item__image{
+        width: 200px;
+    }
+    .content__container1__item__image, .content__container1__item__image1, .content__container1__item__image2{
+        margin: 5px;
+        width: 90px;
+    }
+    .content__button {
+        font-size: 100%;
+        width: 35%;
+    }
+    .content__container2__item>*{
+        width: 300px;
+        padding: 0;
+    }
+    .content__container2{
+        flex-wrap: wrap;
+    }
+  }
